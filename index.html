@@ -125,7 +125,7 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
 -->
 
 <!-- interactive dashboard -->
-<div class='tableauPlaceholder' id='viz1648134733931' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1648135082960' style='position: relative'>
   <noscript>
     <a href='#'>
       <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BarGraph_Tanya1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
@@ -147,17 +147,17 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </object>
 </div>
 <script type='text/javascript'>
-var divElement = document.getElementById('viz1648134733931');
+var divElement = document.getElementById('viz1648135082960');
 var vizElement = divElement.getElementsByTagName('object')[0];
 if ( divElement.offsetWidth > 800 )
-{ vizElement.style.width='1000px';vizElement.style.height='827px';}
+{ vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
 else if ( divElement.offsetWidth > 500 )
-{ vizElement.style.width='1000px';vizElement.style.height='827px';}
-else
-{ vizElement.style.width='100%';vizElement.style.height='827px';}
-var scriptElement = document.createElement('script');
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-vizElement.parentNode.insertBefore(scriptElement, vizElement);
+{ vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+ else
+ { vizElement.style.width='100%';vizElement.style.height='827px';}
+ var scriptElement = document.createElement('script');
+ scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+ vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 
 </body>
