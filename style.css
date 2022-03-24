@@ -27,7 +27,7 @@ body {
 }
 
 .image-container {
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   height: 250px;
