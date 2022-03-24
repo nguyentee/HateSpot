@@ -17,16 +17,17 @@ body {
   background: #F2E3D0;
 }
 
-table {
+
+th {
+  font-family: libre-franklin, sans-serif;
+  font-size: 18px;
+  font-weight: 2000;
+  text-align: center;
   border: thin solid grey;
 }
 
-th {
-  font-weight: 1000;
-  text-align: center;
-}
-
-th {
+tr {
+  font-size: 16px;
   text-align: center;
 }
 
