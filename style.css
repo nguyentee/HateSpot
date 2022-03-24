@@ -16,6 +16,9 @@ body {
   font-style: normal;
   background: #F2E3D0;
 }
+th {
+  font-weight: bolder;
+}
 
 .logo-container {
   display: flex;
