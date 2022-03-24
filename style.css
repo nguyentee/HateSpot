@@ -28,6 +28,10 @@ th {
   text-align: center;
 }
 
+th {
+  text-align: center;
+}
+
 .logo-container {
   display: flex;
   flex: 0.01;
