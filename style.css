@@ -30,6 +30,8 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  height: 250px;
+  width: auto;
 }
 
 .presentation {
