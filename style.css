@@ -17,8 +17,15 @@ body {
   background: #F2E3D0;
 }
 
+table {
+  width: 100%;
+  border: thin solid grey;
+  border-collapse: collapse;
+}
+
 th {
   font-weight: bold;
+  text-align: center;
 }
 
 .logo-container {
