@@ -17,7 +17,7 @@ body {
   background: #F2E3D0;
 }
 
-.logo-container, .centerImage {
+.logo-container {
   display: flex;
   flex: 0.01;
   margin-left: auto;
@@ -26,6 +26,14 @@ body {
   width: auto;
 }
 
+.centerImage {
+  display: flex;
+  flex: 0.1;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: auto;
+}
 
 .presentation {
   display:flex;
