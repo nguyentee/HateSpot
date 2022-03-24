@@ -26,6 +26,7 @@ body {
   width: auto;
 }
 
+/*
 .centerImage {
   display: flex;
   flex: 0.1;
@@ -34,6 +35,7 @@ body {
   height: 150;
   width: auto;
 }
+*/
 
 .presentation {
   display:flex;
