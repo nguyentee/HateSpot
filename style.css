@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: 'orpheuspro', serif;
+  font-weight: 1000;
+  font-style: normal;
+  background: #F2E3D0;
+}
+
+.logo-container {
+  display: flex;
+  flex: 0.01;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
+  width: auto;
+}
+
+.presentation {
+  display:flex;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 84px;
+  font-weight: 550;
+  text-align: center;
+  line-height: 1.1;
+  color: #403931;
+}
+
+.intro-text h2 {
+  font-family: libre-franklin, sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  text-align: center;
+  color: #696969;
+  font-size: 23px;
+}
+
+.intro-text h3 {
+  font-family: libre-franklin, sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  text-align: center;
+  color: #696969;
+  font-size: 23px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.intro-text p {
+  font-family: 'orpheuspro', serif;
+  font-weight: 100;
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* Tableau */
+.tableauPlaceHolder
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+  height: auto;
+}

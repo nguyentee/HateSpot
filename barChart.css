@@ -1,0 +1,13 @@
+//barChart CSS
+
+#my-chart.bar {
+  height: 200px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#my-chart.bar {
+  --labels-size: 30px;
+}
+
+/* Cite: this code is from lab 4 of ITEC2100 */
