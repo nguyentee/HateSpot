@@ -17,6 +17,10 @@
       </div>
     </header>
 
+<button onclick="showHideFunction()">Click Me</button><br>
+    
+    <div id = "main">
+	  
     <main>
       <section class="presentation">
         <div class="introduction">
@@ -297,6 +301,16 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
         </div>
       </section>
     </main>
+</div>
+
+function showHideFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 <script src="hateCrime.js"></script>
 <br/>
