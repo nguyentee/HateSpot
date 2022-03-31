@@ -16,10 +16,6 @@
         <link rel="stylesheet" href="https://use.typekit.net/uzh4maa.css">
       </div>
     </header>
-
-<button onclick="showHideFunction()">Click Me</button><br>
-    
-    <div id = "main">
 	  
     <main>
       <section class="presentation">
@@ -28,6 +24,10 @@
             <h1>5 Years of </h1>
             <h1>Police-Reported Hate Crimes</h1>
 
+		<button onclick="showHideFunction()">Click Me</button><br>
+    
+  		<div id = "main">
+		  
             <h1>in Ottawa</h1>
             </br>
             <h2>From 2015 to 2020</h2>
@@ -305,7 +305,7 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
 
 <script>
 function showHideFunction() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("main");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
