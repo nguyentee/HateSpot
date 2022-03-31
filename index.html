@@ -41,7 +41,7 @@
 
 	<button onclick="showHideFunction()">Click Me</button><br>
     
-  		<div id = "main">
+  	<div id = "details">
 	
             <h2>Motivation</h2>
           </br>
@@ -199,6 +199,19 @@ To use the “Hate Crime Type” legend, click on any of the filters. For exampl
         </p>
       </br>
 
+</div>
+
+<script> 
+function showHideFunction() {
+  var x = document.getElementById("main");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
       <!-- interactive dashboard -->
       <div class='tableauPlaceholder' id='viz1648135082960' style='position: relative'>
         <noscript>
@@ -301,18 +314,7 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
       </section>
     </main>
 </div>
-</div>
 
-<script> 
-function showHideFunction() {
-  var x = document.getElementById("main");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 
 <script src="hateCrime.js"></script>
 <br/>
