@@ -200,7 +200,7 @@
 	}
 	</script>
 
-	<button id= "button3" onclick="showHideDesignAnalysis()">Show/Hide Design Analysis</button><br>
+	<button id= "button4" onclick="showHideDesignAnalysis()">Show/Hide Design Analysis</button><br>
     
   	<div id = "designAnalysis">
 
@@ -235,7 +235,7 @@
 	}
 	</script>
 
-<button id= "button3" onclick="showHideWalkthrough()">Show/Hide Walkthrough</button><br>
+<button onclick="showHideWalkthrough()">Show/Hide Walkthrough</button><br>
     
   	<div id = "walkthrough">
 
@@ -316,9 +316,9 @@ To use the “Hate Crime Type” legend, click on any of the filters. For exampl
       </script>
     </br>
 
-	<button id= "button2" onclick="showHideFunction2()">View/Hide Project Analysis</button><br>
+	<button onclick="showHideDataAnalysis()">View/Hide Data Analysis</button><br>
     
-  	<div id = "analysis">
+  	<div id = "dataAnalysis">
 
             <h2>Data Analysis</h2>
           </br>
@@ -373,6 +373,18 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
 </br>
 <center><img src="./img/DataAnalysis5.png" alt="Graph 5"></center>
 </br>
+
+</div>
+<script> 
+function showHideDataAnalysis() {
+  var x = document.getElementById("dataAnalysis");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
             <h2>Conclusion</h2>
           </br>
               <p>Much progress has been made from Sprint 1, our group was able to accomplish our most important and necessary task of connecting the map and bar chart to an interactive dashboard which can filter, zoom (the map), and provide details on demand for both visualizations, and aim to connect our third visualization to the dashboard next. In addition, there were also some stylistic and written elements that were added to our webpage from Sprint 1 to provide better context and more information about our project and webpage to users. From the feedback in Sprint 1, there was some critique with how the map was functioning in terms of zooming and panning which unfortunately cannot be fixed due to how Tableau maps function but a remedy/alternative would be to use the tools on the left-hand-side of the map that come with many functions for users to zoom in/out and pan more effectively. For future work, we plan on connecting our third visualization onto the dashboard with the same brushing, linking, and filtering features as the other 2 visualization, we also plan on adding a search bar next to the legend of the map, and from our data analysis, we plan on using the results found during the exploration to be some of the key information found in the data for our ‘highlight’ text.
@@ -383,18 +395,6 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
       </section>
     </main>
 </div>
-
-</div>
-<script> 
-function showHideFunction2() {
-  var x = document.getElementById("analysis");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 
 <script src="hateCrime.js"></script>
 <br/>
