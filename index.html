@@ -39,15 +39,31 @@
             <center><img src="./img/OttawaPolice_Car_Black.png" alt="Ottawa Police Car"></center>
           </div>
 
-	<button id= "button1" onclick="showHideFunction()">View/Hide Previous Research</button><br>
+	<button id= "button1" onclick="showHideMotivation()">Show/Hide Motivation</button><br>
     
-  	<div id = "details">
+  	<div id = "motivation">
 	
             <h2>Motivation</h2>
           </br>
               <p>The number of hate and bias-motivated incidents have increased over the last few years with cases continuing to rise at rapid rates. The interactive map and bar graph below highlight the different police-reported hate and bias crime rates in various Ottawa neighbourhoods. The visualizations allow users to select a general location and/or input an address, and filter it by selecting a specific time period (years) and type of hate and bias-motivated incident. The visualizations and data presented on this page were created for policy-makers, police, educators, and other stakeholders that may be in a position to raise awareness and take the necessary steps to implement positive change. This data is also beneficial to current and potential Ottawa residents who may or may not be a part of targeted groups in order to bring awareness of what is happening within their communities, and to advocate and support one another.
               </p>
             </br>
+	</div>
+
+	<script> 
+	function showHideMotivation() {
+	  var x = document.getElementById("motivation");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+	<button id= "button2" onclick="showHideData()">Show/Hide Data</button><br>
+    
+  	<div id = "data">
             <h2>Data</h2>
           </br>
               <p>The data that was used could be found on Open Ottawa's website. Majority of the data is categorical. The data includes the year of occurrence, hate crime type, primary hate crime motivation, primary location, Ottawa neighbourhood, and more.</p>
@@ -135,6 +151,24 @@
                 </tr>
               </table>
             </br>
+	</div>
+
+	<script> 
+	function showHideData() {
+	  var x = document.getElementById("data");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+
+	<button id= "button3" onclick="showHideTaskAnalysis()">Show/Hide Task Analysis</button><br>
+    
+  	<div id = "taskAnalysis">
+		
             <h2>Task Analysis</h2>
             </br>
               <p>	Our interview began with discussing what neighbourhoods in Ottawa we were from, which transitioned us to get into the topic of awareness of crime rates in our neighbourhood. Professor Sprague had an awareness of crime rates in his neighbourhood as well as the surrounding areas, but no awareness of hate crimes in his area.  When asked about hate crimes, Professor Sprague hadn’t heard of any. This is mostly because the city would want to cover up any of these issues as it discourages new citizens, as well as the major media coverage of COVID. One point professor Sprague made noticed is that there will be more crimes in areas with higher populations. This was noted and we looked for this when analyzing the data. We concluded that having a common awareness of hate and bias-motivated crimes would be beneficial for the general community to address the issue and know how to stop it. </p>
@@ -153,6 +187,23 @@
 </p>
 </br>
             </br>
+
+	</div>
+	<script> 
+	function showHideTaskAnalysis() {
+	  var x = document.getElementById("taskAnalysis");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+	<button id= "button3" onclick="showHideDesignAnalysis()">Show/Hide Design Analysis</button><br>
+    
+  	<div id = "designAnalysis">
+
             <h2>Design Process</h2>
           </br>
             <p>Our first step was to decide what data we wanted to focus on from our dataset. We decided to focus on location, hate crime type, motivation, and year. One of our main focuses is on the location and we want to have a map that interacts with another graph that shows the specific data. We developed our own individual sketches using pencil and paper that we thought would best represent the data in a visualization. Afterwards, we met as a group and voted for the single best design that best represented our desired data. </p>
@@ -171,6 +222,23 @@
           </br>
               <p>For our final visualization, we created an interactive dashboard using a map and a bar graph of Ottawa neighbourhoods. All of our code is hosted on Github and has been downloaded into a zip file. Both of the visualizations were created on Tableau and we used brushing and linking for both visualizations to interact with one another; when you click on a location of the map, the bar graph filters with the map location(s) and displays other information linked. And when you click on any section of the bar graph, the map filters to the location(s) that correlate with the bar graph. To make the visualization work on our webpage, we had to embed the code into our index.html file.</p>
 </br>
+
+	</div>
+	<script> 
+	function showHideDesignAnalysis() {
+	  var x = document.getElementById("designAnalysis");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+<button id= "button3" onclick="showHideWalkthrough()">Show/Hide Walkthrough</button><br>
+    
+  	<div id = "walkthrough">
+
 <p><strong>Walkthrough</strong></p>
 </br>
 <p>
@@ -199,18 +267,17 @@ To use the “Hate Crime Type” legend, click on any of the filters. For exampl
         </p>
       </br>
 
-</div>
-
-<script> 
-function showHideFunction() {
-  var x = document.getElementById("details");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+	</div>
+	<script> 
+	function showHideWalkthrough() {
+	  var x = document.getElementById("walkthrough");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
 
       <!-- interactive dashboard -->
       <div class='tableauPlaceholder' id='viz1648135082960' style='position: relative'>
