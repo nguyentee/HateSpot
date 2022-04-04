@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/uzh4maa.css">
       </div>
     </header>
+<<<<<<< HEAD
   </br>
 
 
@@ -55,13 +56,16 @@
            vizElement.parentNode.insertBefore(scriptElement, vizElement);
           </script>
 </br>
+=======
+	  
+>>>>>>> 1dae2f579bb1496d0b922edf6ef74b00a1ef3827
     <main>
       <section class="presentation">
         <div class="introduction">
           <div class="intro-text">
             <h1>5 Years of </h1>
             <h1>Police-Reported Hate Crimes</h1>
-
+		 
             <h1>in Ottawa</h1>
             </br>
             <h2>From 2015 to 2020</h2>
@@ -77,12 +81,31 @@
             <center><img src="./img/OttawaPolice_Car_Black.png" alt="Ottawa Police Car"></center>
           </div>
 
-
+	<button id= "button1" onclick="showHideMotivation()">Show/Hide Motivation</button><br>
+    
+  	<div id = "motivation">
+	
             <h2>Motivation</h2>
           </br>
               <p>The number of hate and bias-motivated incidents have increased over the last few years with cases continuing to rise at rapid rates. The interactive map and bar graph below highlight the different police-reported hate and bias crime rates in various Ottawa neighbourhoods. The visualizations allow users to select a general location and/or input an address, and filter it by selecting a specific time period (years) and type of hate and bias-motivated incident. The visualizations and data presented on this page were created for policy-makers, police, educators, and other stakeholders that may be in a position to raise awareness and take the necessary steps to implement positive change. This data is also beneficial to current and potential Ottawa residents who may or may not be a part of targeted groups in order to bring awareness of what is happening within their communities, and to advocate and support one another.
               </p>
             </br>
+	</div>
+
+	<script> 
+	function showHideMotivation() {
+	  var x = document.getElementById("motivation");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+	<button id= "button2" onclick="showHideData()">Show/Hide Data</button><br>
+    
+  	<div id = "data">
             <h2>Data</h2>
           </br>
               <p>The data that was used could be found on Open Ottawa's website. Majority of the data is categorical. The data includes the year of occurrence, hate crime type, primary hate crime motivation, primary location, Ottawa neighbourhood, and more.</p>
@@ -170,6 +193,24 @@
                 </tr>
               </table>
             </br>
+	</div>
+
+	<script> 
+	function showHideData() {
+	  var x = document.getElementById("data");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+
+	<button id= "button3" onclick="showHideTaskAnalysis()">Show/Hide Task Analysis</button><br>
+    
+  	<div id = "taskAnalysis">
+		
             <h2>Task Analysis</h2>
             </br>
               <p>	Our interview began with discussing what neighbourhoods in Ottawa we were from, which transitioned us to get into the topic of awareness of crime rates in our neighbourhood. Professor Sprague had an awareness of crime rates in his neighbourhood as well as the surrounding areas, but no awareness of hate crimes in his area.  When asked about hate crimes, Professor Sprague hadn’t heard of any. This is mostly because the city would want to cover up any of these issues as it discourages new citizens, as well as the major media coverage of COVID. One point professor Sprague made noticed is that there will be more crimes in areas with higher populations. This was noted and we looked for this when analyzing the data. We concluded that having a common awareness of hate and bias-motivated crimes would be beneficial for the general community to address the issue and know how to stop it. </p>
@@ -188,6 +229,23 @@
 </p>
 </br>
             </br>
+
+	</div>
+	<script> 
+	function showHideTaskAnalysis() {
+	  var x = document.getElementById("taskAnalysis");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+	<button id= "button4" onclick="showHideDesignAnalysis()">Show/Hide Design Analysis</button><br>
+    
+  	<div id = "designAnalysis">
+
             <h2>Design Process</h2>
           </br>
             <p>Our first step was to decide what data we wanted to focus on from our dataset. We decided to focus on location, hate crime type, motivation, and year. One of our main focuses is on the location and we want to have a map that interacts with another graph that shows the specific data. We developed our own individual sketches using pencil and paper that we thought would best represent the data in a visualization. Afterwards, we met as a group and voted for the single best design that best represented our desired data. </p>
@@ -206,6 +264,23 @@
           </br>
               <p>For our final visualization, we created an interactive dashboard using a map and a bar graph of Ottawa neighbourhoods. All of our code is hosted on Github and has been downloaded into a zip file. Both of the visualizations were created on Tableau and we used brushing and linking for both visualizations to interact with one another; when you click on a location of the map, the bar graph filters with the map location(s) and displays other information linked. And when you click on any section of the bar graph, the map filters to the location(s) that correlate with the bar graph. To make the visualization work on our webpage, we had to embed the code into our index.html file.</p>
 </br>
+
+	</div>
+	<script> 
+	function showHideDesignAnalysis() {
+	  var x = document.getElementById("designAnalysis");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+<button onclick="showHideWalkthrough()">Show/Hide Walkthrough</button><br>
+    
+  	<div id = "walkthrough">
+
 <p><strong>Walkthrough</strong></p>
 </br>
 <p>
@@ -234,9 +309,61 @@ To use the “Hate Crime Type” legend, click on any of the filters. For exampl
         </p>
       </br>
 
+<<<<<<< HEAD
+=======
+	</div>
+	<script> 
+	function showHideWalkthrough() {
+	  var x = document.getElementById("walkthrough");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	}
+	</script>
+
+      <!-- interactive dashboard -->
+      <div class='tableauPlaceholder' id='viz1648135082960' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BarGraph_Tanya1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='BarGraph_Tanya1&#47;Dashboard1' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BarGraph_Tanya1&#47;Dashboard1&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+      var divElement = document.getElementById('viz1648135082960');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if ( divElement.offsetWidth > 800 )
+      { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+      else if ( divElement.offsetWidth > 500 )
+      { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+       else
+       { vizElement.style.width='100%';vizElement.style.height='827px';}
+       var scriptElement = document.createElement('script');
+       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+       vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+>>>>>>> 1dae2f579bb1496d0b922edf6ef74b00a1ef3827
     </br>
 
-
+	<button onclick="showHideDataAnalysis()">View/Hide Data Analysis</button><br>
+    
+  	<div id = "dataAnalysis">
 
             <h2>Data Analysis</h2>
           </br>
@@ -291,6 +418,18 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
 </br>
 <center><img src="./img/DataAnalysis5.png" alt="Graph 5"></center>
 </br>
+
+</div>
+<script> 
+function showHideDataAnalysis() {
+  var x = document.getElementById("dataAnalysis");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
             <h2>Conclusion</h2>
           </br>
               <p>Much progress has been made from Sprint 1, our group was able to accomplish our most important and necessary task of connecting the map and bar chart to an interactive dashboard which can filter, zoom (the map), and provide details on demand for both visualizations, and aim to connect our third visualization to the dashboard next. In addition, there were also some stylistic and written elements that were added to our webpage from Sprint 1 to provide better context and more information about our project and webpage to users. From the feedback in Sprint 1, there was some critique with how the map was functioning in terms of zooming and panning which unfortunately cannot be fixed due to how Tableau maps function but a remedy/alternative would be to use the tools on the left-hand-side of the map that come with many functions for users to zoom in/out and pan more effectively. For future work, we plan on connecting our third visualization onto the dashboard with the same brushing, linking, and filtering features as the other 2 visualization, we also plan on adding a search bar next to the legend of the map, and from our data analysis, we plan on using the results found during the exploration to be some of the key information found in the data for our ‘highlight’ text.
@@ -300,6 +439,7 @@ From 2015-2019, the average rate of increase in reported hate crimes each year w
         </div>
       </section>
     </main>
+</div>
 
 <script src="hateCrime.js"></script>
 <br/>
